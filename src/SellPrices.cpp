@@ -24,7 +24,7 @@ class ChangeSellPricesItem : public ItemScript
 public:
     ChangeSellPricesItem() : ItemScript("ChangeSellPricesItem") { }
 
-    bool OnItemSellPrice(Player* /*player*/, Item* item, uint32& sellPrice) override
+    bool OnItemSellPrice(Player* /*player*/, Item* item, uint32& sellPrice)
     {
         if (!IsModuleEnabled())
             return true;
